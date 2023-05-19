@@ -13,7 +13,7 @@ export const displayData = () => {
 
     fetch(url).then(r => r.json()).then(data => {
         // console.log(data); // logging what we recieve, thankfully it is already an array
-
+        
         data.forEach(object => { //forEach loop for the "data" array
             // console.log(object.id); // logging each object in array
             const eventTitle = object.name // setting eventTitle
