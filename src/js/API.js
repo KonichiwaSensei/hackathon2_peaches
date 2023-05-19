@@ -44,9 +44,10 @@ export const displayData = () => {
         subEventButtons.forEach(element => {
             element.addEventListener('click', (event) => {
                 // console.log(event.target.parentNode.id);
-                // console.log(data[0]);
+                console.log(data);
                 
                 const subEventID = event.target.parentNode.id
+                // console.log(subEventID);
 
                 data.forEach(element => {
                     console.log(element);
@@ -61,8 +62,6 @@ export const displayData = () => {
                     }
 
                 });
-
-
             })
         });
 

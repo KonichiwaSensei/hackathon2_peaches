@@ -7,10 +7,10 @@ export const submitRegistrationData = () => {
     const userEmail = document.querySelector('#email')
     const userPhone = document.querySelector('#pnumber')
     const dateOfBirth = document.querySelector('#dateb')
-    const submitButtonRequest = document.querySelector('#subbtn')
+    // const submitButtonRequest = document.querySelector('#subbtn')
     const registrationForm = document.querySelector('#registration')
 
-    console.log(submitButtonRequest);
+    // console.log(submitButtonRequest);
 
 
     registrationForm.addEventListener('submit', async (e) => {
