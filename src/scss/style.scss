@@ -1,19 +1,30 @@
-.sub-event {
-    height: 200px;
-    width: 200px;
-    background-color: grey;
-    text-align: center;
-    padding: 20px;
-    border-radius: 20px;
+
+* {
+    box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+$color: lightgrey;
+
 .container_header{
-    background-color: lightgray;
+    margin-bottom: 20px;
+    background-color: $color;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2px;
-    margin: 0;
+    padding: 10px;
+    
+}
+h3 {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .header_list {
@@ -31,66 +42,72 @@
 
 }
 
-.event__main{
-
-    background-color: gray;
+.event__main {
+    position: relative;
+    margin: auto;
+    background-color: $color;
     display: flex;
-    justify-content: space-between;
-    
-    width: 50%;
+    justify-content: left;
+    gap: 15px;
+    width: 80%;
     height: auto;
-
-
+    padding: 20px;
+    border-radius: 15px;
 
     .event__main__featured{
-
         .event__main__featured_text{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            text-transform: uppercase;
+           
+        }
+
+    }
+
+    .event__main__image{
+        max-width: 400px;
+       
+
+        img{
+            background-color: $color;
+            max-width: 100%;
+            border-radius: 15px;
             
         }
 
     }
 
-
-
-    .event__main__image{
-
-
-        img{
-            background-color: gray;
-            width: 50%;
-            height: auto;
-        }
-
-    }
-
-    .event__main__text{
-
-        .event__main__text_title{
-
+    .event__main__text {
+           
+        .event__main__text_title {
 
         }
-
-
         .event__main__text_description{
             
         }
-
     }
-
-
     .event__main__buttondiv{
-        // border: 1px solid red;
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
         
-        justify-content: flex-end;
-        
-
-        .event__main__regbutton{
-            display: flex;
-            justify-content: end;
-            align-content: end;
+        div.event__main__regbutton{
+            
         }
 
     }
 
 
+}
+.section3 {
+    max-width: 80%;
+}
+.sub-events-all {
+    margin: 20px;
+    height: auto;
+    max-width: 100px;
+    background-color: $color;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
 }
