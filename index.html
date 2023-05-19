@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./src/scss/style.scss">
 
     <script type="module" src="./src/js/script.js" defer></script> <!-- Script linked here -->
-
+    <script type="module" src="./src/js/Modal.js" defer></script>
 </head>
 
 <body>
@@ -42,8 +42,14 @@
             <p class="event__main__text_description">Event description</p>
         </div>
         <div class="event__main__buttondiv">
-            <button class="event__main__regbutton">Registration</button>
-        </div>
+
+            <!-- <button class="event__main__regbutton">Registration</button> -->
+
+
+
+            <button id="myBtn">Registration</button> <!-- Trigger/Open The Modal -->
+
+
     </section>
 
     <div class="sub-event">
@@ -51,6 +57,24 @@
         <button class="btn">More</button>
     </div>
 
+    <div class="modal-content"> <!-- Modal content -->
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Registration</h2>
+        </div>
+
+        <div class="modal-body">
+            <p>First name</p>
+            <p>Surname</p>
+            <p>Phone Number</p>
+            <p>Email</p>
+            <p>Date of Birth</p>
+        </div>
+
+    </div>
 </body>
 
 </html>
+
+
+
