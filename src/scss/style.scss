@@ -1,0 +1,25 @@
+.container_header{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin: 0;
+}
+
+.header_list {
+    
+    ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    }
+
+    li{
+        margin: 0 10px;
+    }
+
+}
+
