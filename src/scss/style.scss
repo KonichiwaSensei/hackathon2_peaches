@@ -136,15 +136,34 @@ a {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
   }
-.section3 {
+  .sub_events_all {
+    margin: auto;
+    
     max-width: 80%;
-}
-.sub-events-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+ 
+.rendered_div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
     height: auto;
-    max-width: 100px;
+    max-width: 200px;
     background-color: $color;
     text-align: center;
     padding: 20px;
     border-radius: 15px;
+    border: 1px solid red;
+    align-items: stretch;
+    
+}
+.btn {
+    align-items: end;
+    border: 1px solid red;
+    bottom: 20px;
+    
 }
