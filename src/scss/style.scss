@@ -36,7 +36,7 @@ a {
     list-style: none; 
     }
 
-    li{
+    li{ 
         margin: 0 10px;
     }
 
@@ -61,20 +61,15 @@ a {
             text-transform: uppercase;
            
         }
-
     }
 
     .event__main__image{
         max-width: 400px;
-       
-
         img{
             background-color: $color;
             max-width: 100%;
             border-radius: 15px;
-            
         }
-
     }
 
     .event__main__text {
@@ -120,12 +115,15 @@ a {
   /* Modal Content */
   .modal-content {
     display: none;
-    position: relative;
+    position: absolute;
+    inset: 0;
+    z-index: 5;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 70%;
+    height:fit-content;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
@@ -138,32 +136,32 @@ a {
   }
   .sub_events_all {
     margin: auto;
-    
     max-width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
  
 .rendered_div {
-    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 20px;
     height: auto;
-    max-width: 200px;
+    max-width: 230px;
     background-color: $color;
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid red;
-    align-items: stretch;
+    
+}
+.sub-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     
 }
 .btn {
-    align-items: end;
-    border: 1px solid red;
-    bottom: 20px;
+    border-radius: 5px;
     
 }
